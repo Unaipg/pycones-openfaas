@@ -3,7 +3,7 @@ from reddit import get_reddit_posts
 def generate_html(posts):
     HTML = "<head><title>NOTICIAS</title></head><body>"
     for post in posts:
-        HTML += f"""<a href="{post['url']}><h3>{post['title']}</h3></a><br>"""
+        HTML += f"""<a href="{post['url']}"><h3>{post['title']}</h3></a><br>"""
     HTML += "</body>"
     return HTML
 
