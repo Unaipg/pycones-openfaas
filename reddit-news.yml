@@ -7,3 +7,5 @@ functions:
     lang: python3
     handler: ./reddit-news
     image: reddit-news:latest
+    environment:
+      content_type: text/html
