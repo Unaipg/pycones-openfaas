@@ -8,8 +8,13 @@ functions:
     handler: ./reddit-memes
     image: reddit-memes:latest
     exec_timeout: 0
+    environment:
+        SUBREDDIT_URL: https://www.reddit.com/r/latestagecapitalism.json
+        content_type: text/html
   reddit-news:
     lang: python3
     handler: ./reddit-news
     image: reddit-news:latest
     exec_timeout: 30
+    environment:
+        SUBREDDIT_URL: https://www.reddit.com/r/antifa.json
