@@ -1,0 +1,9 @@
+provider:
+  name: faas
+  gateway: http://127.0.0.1:8080
+
+functions:
+  reddit-memes:
+    lang: python3
+    handler: ./reddit-memes
+    image: reddit-memes:latest
